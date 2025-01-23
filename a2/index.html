@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="name-of-your-css-file.css">
   <title>Module 03</title>
+  <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/Fantasque Sans Mono" rel="stylesheet" type="text/css"/>
   <style>
-     h1 {
+    h1 {
       text-align: center;
     }
     h1 {
@@ -21,39 +22,178 @@
     h1 {
       background-color: lightblue;
     }
-    .white {
-      width: 150px;
-      height: 150px;
-      border: 1px solid black;
-      display: inline-block
-        margin: -2px;
-    }
-    .black {background-color: black}
+.row{
+ position:relative;
+ margin-left:10%;
+ margin-right:10%;
+}
+
+.white{
+ border: 1px solid black;
+ width: 12%;
+ height: 60px;
+ background-color:white;
+ float:left;
+}
+ 
+.black{
+ border: 1px solid black;
+ width: 12%;
+ height: 60px;
+ background-color:#787878;
+ float:left;
+}
+
+#footer {
+ border:solid 1px;
+ padding: 10px;
+ margin:10px;
+}
+
+.container {
+ margin-top:10%;
+ margin-left:50%;
+ margin-right:50%;
+ margin-bottom:10%;
+}
+
+img {
+ margin-left: 5px;
+ margin-top:10px;
+ }
   </style>
-</head>
+  </head>
 <body>
-  <h1>Chessboard</h1>
-  <div>
-    <div class="white"></div>
-    <div classd="white black"></div>
-    <div class="white"></div>
-    <div classd="white black"></div>
-    <div class="white"></div>
-    <div classd="white black"></div>
-    <div class="white"></div>
-    <div classd="white black"></div>
-  </div>
-  <div>
-    <div class="white"></div>
-    <div classd="white black"></div>
-    <div class="white"></div>
-    <div classd="white black"></div>
-    <div class="white"></div>
-    <div classd="white black"></div>
-    <div class="white"></div>
-    <div classd="white black"></div>
-  </div>
+  <h1 id="title">Chessboard</h1>
+  
+  <div class="container"></div>
   
 
+  
+ <div class="row"> <!-- Row 1 -->
+ </div>
+ <div id="clear"> </div>
+
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ </div>
+ <div id="clear"> </div>
+  
+   <div class="row"> <!-- Row 2 -->
+ </div>
+ <div id="clear"> </div>
+      
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+  </div>
+  <div id="clear"> </div>
+  
+     <div class="row"> <!-- Row 3 -->
+ </div>
+ <div id="clear"> </div>
+
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+  </div>
+  <div id="clear"> </div>
+    
+    <div class="row"> <!-- Row 4 -->
+ </div>
+ <div id="clear"> </div>
+ 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div>
+ <div class="white"></div>
+  </div>
+  <div id="clear"> </div>
+
+<div class="row"> <!-- Row 5 -->
+ </div>
+ <div id="clear"> </div>
+
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+  </div>
+  <div id="clear"> </div>
+
+<div class="row"> <!-- Row 6 -->
+ </div>
+ <div id="clear"> </div>
+ 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div>
+  </div>
+  <div id="clear"> </div>
+
+<div class="row"> <!-- Row 7 -->
+ </div>
+ <div id="clear"> </div>
+
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+  </div>
+  <div id="clear"> </div>
+
+<div class="row"> <!-- Row 8 -->
+ </div>
+ <div id="clear"> </div>
+ 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div> 
+ <div class="black"></div> 
+ <div class="white"></div>
+ <div class="black"></div> 
+ <div class="white"></div>
+  </div>
+  <div id="clear"> </div>
+
+<div id="footer"><p><a href="http://validator.w3.org/check?uri=referer" target="_blank"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0" height="31" width="88" /></a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank"><img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"></a></p></div>
+   
+
+  
 </body>
 </html>
