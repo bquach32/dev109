@@ -1,0 +1,32 @@
+p {
+   font-family: 'DancingScript';
+   font-weight: normal;
+   font-style: normal;
+}
+  body {
+    font-family: 'Helvetica, Arial, sans-serif';
+    }
+   body {
+     color: #665544;
+    }
+    div {
+  padding:  0 15% 0 15%;
+    }
+    h1 {
+      text-align: center;
+    }
+    h1 {
+      color: blue
+    }
+    h1 {
+      font-family:'Dancing Script';}
+    h1 {
+      font-size: 400%;
+    }
+    p {
+      font-family: 'Dancing Script';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 200%;
+    }
+    i {color: darkgreen;}
