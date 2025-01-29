@@ -1,45 +1,41 @@
+* {
+  font-family:'Unique';
+  color: #032016;
+  text-align: center;}
+
 .column1 {
-  width: 31.3%;
-  float: left;
-  margin: 1%;
-  height: 10em;
-  margin-bottom: 1em;
   background-color:#abebc6;}
 
 .column2 {
-  width: 31.3%;
-  height: 10em;
-  margin-bottom: 1em;
-  float: left;
-  margin: 1%;
   background-color:#fad7a0;}
 
 .column3 {
-  width: 31.3%;
-  float: left;
-  margin: 1%;
   margin-right: 0%;
-  height: 10em;
-  margin-bottom: 1em;
   background-color: #edbb99;}
 
-* {
-  font-family:'Unique';
-  color: 032016;
-  text-align: center;}
+.column1, .column2, .column3, #nav, #footer{  
+  background-size: contain;
+  background-position: center;
+  background-repeat:no-repeat;}
+
+.column1, .column2, .column3{
+  width: 31.3%;
+  height: 10em;
+  margin-bottom: 1em;
+  float: left;
+  margin: 1%;}
 
 body {
   width: 90%;
   margin: 0 ;
-  background-image: url("https://png.pngtree.com/background/20210717/original/pngtree-elegant-roses-are-red-picture-image_1440995.jpg");
+  background-image: url("https://png.pngtree.com/background/20210717/original/pngtree-elegant-roses-are-red-picture-image_1440995.jpg");}
 
 #nav {
-  background-color: #d2b4de;
   margin: 1%;
-  background-size:contain;
   height: 3em;
   margin-bottom: 1em;
-  padding: 0.5em 0;}
+  padding: 0.5em 0;
+  background-color: #d2b4de;}
   
 #feature {
   background-color: #5dade2;
@@ -49,7 +45,8 @@ body {
   background-repeat:no-repeat;
   height: 15em;
   margin-bottom: 1em;
-  margin: 1%;}
+  margin: 1%;
+  font-size: 18px;}
   
 #footer {
   background-color: #85929e;
