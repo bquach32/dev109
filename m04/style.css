@@ -27,7 +27,8 @@
 
 body {
   width: 90%;
-  margin: 5% ;
+  margin: 0;
+  text-align: center;
   background-image: url("https://png.pngtree.com/background/20210717/original/pngtree-elegant-roses-are-red-picture-image_1440995.jpg");}
 
 #nav {
