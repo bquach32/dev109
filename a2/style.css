@@ -16,7 +16,7 @@
  border: 1px solid black;
  width: 12%;
  height: 80px;
- background-color:#787878;
+ background-color: #787878;
  float:left;
 }
 
@@ -41,7 +41,7 @@
 #footer {
   border:solid 1px;
   margin-top: 28px;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   text-align: center;
   background-color: #504eab;
 }
@@ -51,5 +51,5 @@ clear:both;
 }
 
 body {
- background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
+ background-image: url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
 }
