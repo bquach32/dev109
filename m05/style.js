@@ -1,21 +1,19 @@
-var table = prompt("Please enter your name", "Buu Quach");
-  if (person != null) {
-    document.getElementById("demo").innerHTML =
-    "Hello " + person + "! How are you today?";             // Unit of table
+let number = prompt ("What is 1 multiplied by 5?");
 
-var operator = 'addition'; // Type of calculation
+var table = 5;             // Unit of table
+var operator = 'Multiplication'; // Type of calculation
 var i = 1;                 // Set counter to 1
 var msg = '<h2>Multiplication Table</h2>';              // Message
 
 if (operator === 'addition') {
   // Do addition
-  while (i < 11) {
-    msg += i + ' * ' + table + ' = ' + (i + table) + '<br />';
+  while (i < 10) {
+    msg += i + ' + ' + table + ' = ' + (i + table) + '<br />';
     i++;
   }
 } else {
   // Do multiplication
-  while (i < 11) {
+  while (i < 10) {
     msg += i + ' x ' + table + ' = ' + (i * table) + '<br />';
     i++;
   }
