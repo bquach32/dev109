@@ -22,3 +22,4 @@ if (operator === 'addition') {
 // Write the message into the page
 var el = document.getElementById('blackboard');
 el.innerHTML = msg + GetTableContent(table);
+
