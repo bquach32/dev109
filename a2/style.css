@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center; 
 }
+
 /*Buu*/
 .white{
   border: 1px solid black;
@@ -10,6 +11,7 @@
   width:125px;
   background-color:white;
 }
+
  /*Buu*/
 .black{
   border: 1px solid black;
