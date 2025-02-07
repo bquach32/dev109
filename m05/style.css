@@ -5,15 +5,14 @@ body {
 	font-size: 150%;
 	margin: 0px 0px 0px 0px;}
 
-
 h1 {
-	background-image: url('https://ts2.mm.bing.net/th?id=OIP.ytj_ROExEH-8eLtajT-mAAHaHa&pid=15.1');
+	background-image: url('	https://javascriptbook.com/code/c04/images/bullseye-logo.png');
 	background-repeat: no-repeat;
-    background-size: 120px;
+	text-indent: 100%;
+	white-space: nowrap;
 	overflow: hidden;
-	height: 150px;
-    text-align: center;
-    font-size: 100px;
+	height: 109px;
+	width: 643px;
 	margin: 40px auto;}
 p {
   text-align: center;
