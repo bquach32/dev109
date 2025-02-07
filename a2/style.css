@@ -40,7 +40,6 @@ h1 {
 }
 /*footer (Buu)*/
 #footer {
-  display: flex;
   border:solid 1px;
   margin-top: 28px;
   margin-bottom: 10px;
