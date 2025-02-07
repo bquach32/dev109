@@ -1,15 +1,16 @@
+/* The heading (Buu) */
 .row{
   display: flex;
   justify-content: center; 
 }
-
+/*Buu*/
 .white{
   border: 1px solid black;
   height:125px;
   width:125px;
   background-color:white;
 }
- 
+ /*Buu*/
 .black{
   border: 1px solid black;
   height:125px;
@@ -35,7 +36,7 @@ h1 {
   margin-bottom: 0;
   background-color: #5d87cd;
 }
-
+/*footer (Buu)*/
 #footer {
   border:solid 1px;
   margin-top: 28px;
@@ -43,7 +44,7 @@ h1 {
   text-align: center;
   background-color: #504eab;
 }
-
+/*add image (Buu)*/
 body {
  background-image: url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
 }
