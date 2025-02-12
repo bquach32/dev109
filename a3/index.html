@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Artifact 3</title>
+</head>
+<body>
+<label>What is the size of Rhombus?</label><br>
+<input type="text" id="rHeight" value="5" size="5">
+<br>
+<label>Choose color for Even position</label><br>
+<select id="colorEven">
+<option value="#860808">Maroon</option>
+<option value="#265217">Dark Green</option>
+<option value="#d3d3d3">Light Grey</option>
+  </select><br>
 
+<label>Choose color for Odd position</label><br>
+<select id="colorOdd">
+<option value="#ffb6c1">Light Pink</option>
+<option value="#14477f">Dark Blue</option>
+<option value="#ae67d2">Light Purple</option>
+</select>
+<br>
+<label>Choose symbol for Rhombus</label>
+<select id="symbol">
+  <option value="*">*</option>
+  <option value="$">$</option>
+  <option value="@">@</option>
+  <option value="!">!</option>
+  <option value="#">#</option>
+  <option value="%">%</option>
+  <option value="&">&</option>
+  <option value="^">^</option>
+</select>
+<br>
+<button onclick="createRhombus(document.getElementById('rHeight').value,
+document.getElementById('colorEven').value,
+document.getElementById('colorOdd').value,
+document.getElementById('symbol').value);">Display Rhombus</button>
+  
+<div id="upLeft">Rhombus</div>
+<div id="upRight"></div>
+<div id="downLeft"></div>
+<div id="downRight"></div>
+  <div id="fullRhombus"></div>
+
+<script src="style.js"></script>
+
+</body>
+</html>
