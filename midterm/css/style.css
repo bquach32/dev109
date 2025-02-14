@@ -33,6 +33,15 @@ margin: 1%;}
   height: 1700px;
   width: 45%;}
 
+.course {
+  background-color: #C6E9B5;
+  margin: 1%;
+  height: 130px;
+  width: 100%;
+  text-align: center;
+  padding: 1 px;
+}
+
 #nav {
   margin: 1%;
   height: 4em;
