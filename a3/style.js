@@ -10,94 +10,71 @@ function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
   downRight(pHeight, pColorEven, pColorOdd, pSymbol);
 }
 
-function upLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
-  var rLine = "";
-  for (var i = 0; i < pHeight; i++) {
-    rLine += "<p>";
-    // Add leading spaces
-    for (var s = 0; s < pHeight - i; s++) {
-      rLine += "<span style='visibility:hidden'>" + pSymbol + "</span>";
-    }
-    // Create each line on the Rhombus
-    for (var j = 0; j <= i; j++) {
-      // Is the position even or odd so we change the color
-      if (j % 2 === 0) {
-        // odd
-        rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-      } else {
-        // even
-        rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-      }
-    }
-    rLine += "</p>";
-  }
+function createRhombus(pHeight, pColorEven, pColorOdd, pSymbol) {
+  let rhombusHTML = "";
+  
+  rhombusHTML += createUpLeft(pHeight, pColorEven, pColorOdd, pSymbol);
+  rhombusHTML += createUpRight(pHeight, pColorEven, pColorOdd, pSymbol);
+  rhombusHTML += createDownLeft(pHeight, pColorEven, pColorOdd, pSymbol);
+  rhombusHTML += createDownRight(pHeight, pColorEven, pColorOdd, pSymbol);
 
-  document.getElementById("upLeft").innerHTML = rLine;
-} 
-
-
-function downLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
-  var rLine = "";
-  for (var i = pHeight; i > 0; i--) {
-    rLine += "<p>";
-    // Add leading spaces
-    for (var s = 0; s < pHeight - i; s++) {
-      rLine += "<span style='visibility:hidden'>" + pSymbol + "</span>";
-    }
-    // Create each line on the Rhombus
-    for (var j = 0; j < i; j++) {
-      // Is the position even or odd so we change the color
-      if (j % 2 === 0) {
-        // odd
-        rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-      } else {
-        // even
-        rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
-      }
-    }
-    rLine += "</p>";
-  }
-
-  document.getElementById("downLeft").innerHTML = rLine;
+  document.getElementById("rhombus").innerHTML = rhombusHTML;
 }
 
-function upRight(pHeight, pColorEven, pColorOdd, pSymbol) {
-  var rLine = "";
-  for (var i = 0; i < pHeight; i++) {
-    rLine += "<p>";
-    // Create each line on the Rhombus
-    for (var j = 0; j <= i; j++) {
-      // Is the position even or odd so we change the color
-      if (j % 2 === 0) {
-        // odd
-        rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-      } else {
-        // even
-        rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
+function createUpLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+  let rLine = "";
+  for (let i = 0; i < pHeight; i++) {
+      rLine += "<p>";
+      for (let s = 0; s < pHeight - i; s++) {
+          rLine += "<span style='visibility:hidden'>" + pSymbol + "</span>";
       }
-    }
-    rLine += "</p>";
-  }
-
-  document.getElementById("upRight").innerHTML = rLine;
-} 
-
-function downRight(pHeight, pColorEven, pColorOdd, pSymbol) {
-  var rLine = "";
-  for (var i = pHeight; i > 0; i--) {
-    rLine += "<p>";
-    // Create each line on the Rhombus
-    for (var j = 0; j < i; j++) {
-      // Is the position even or odd so we change the color
-      if (j % 2 === 0) {
-        // odd
-        rLine += "<span style='color:" + pColorOdd + ";'>" + pSymbol + "</span>";
-      } else {
-        // even
-        rLine += "<span style='color:" + pColorEven + ";'>" + pSymbol + "</span>";
+      for (let j = 0; j <= i; j++) {
+          let color = j % 2 === 0 ? pColorOdd : pColorEven;
+          rLine += "<span style='color:" + color + ";'>" + pSymbol + "</span>";
       }
-    }
-    rLine += "</p>";
+      rLine += "</p>";
   }
+  return rLine;
+}
 
-  document.getElementById("downRight").innerHTML = rLine;
+function createUpRight(pHeight, pColorEven, pColorOdd, pSymbol) {
+  let rLine = "";
+  for (let i = 0; i < pHeight; i++) {
+      rLine += "<p>";
+      for (let j = 0; j <= i; j++) {
+          let color = j % 2 === 0 ? pColorOdd : pColorEven;
+          rLine += "<span style='color:" + color + ";'>" + pSymbol + "</span>";
+      }
+      rLine += "</p>";
+  }
+  return rLine;
+}
+
+function createDownLeft(pHeight, pColorEven, pColorOdd, pSymbol) {
+  let rLine = "";
+  for (let i = pHeight - 1; i >= 0; i--) {
+      rLine += "<p>";
+      for (let s = 0; s < pHeight - i; s++) {
+          rLine += "<span style='visibility:hidden'>" + pSymbol + "</span>";
+      }
+      for (let j = 0; j <= i; j++) {
+          let color = j % 2 === 0 ? pColorOdd : pColorEven;
+          rLine += "<span style='color:" + color + ";'>" + pSymbol + "</span>";
+      }
+      rLine += "</p>";
+  }
+  return rLine;
+}
+
+function createDownRight(pHeight, pColorEven, pColorOdd, pSymbol) {
+  let rLine = "";
+  for (let i = pHeight - 1; i >= 0; i--) {
+      rLine += "<p>";
+      for (let j = 0; j <= i; j++) {
+          let color = j % 2 === 0 ? pColorOdd : pColorEven;
+          rLine += "<span style='color:" + color + ";'>" + pSymbol + "</span>";
+      }
+      rLine += "</p>";
+  }
+  return rLine;
+}
