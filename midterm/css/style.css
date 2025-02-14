@@ -3,32 +3,15 @@
   color: #032016;
   text-align: center;}
 
-.column1 {
-  background-color:#abebc6;}
-
-.column2 {
-  background-color:#fad7a0;}
-
-.column3 {
-  margin-right: 0%;
-  background-color: #edbb99;}
-
-.column1, .column2, .column3, #nav, #footer{  
+#nav, #footer{  
   background-size: contain;
   background-position: center;
   background-repeat:no-repeat;}
 
-.column1, .column2, .column3{
-  width: 31.3%;
-  height: 10em;
-  margin-bottom: 1em;
-  float: left;
-  margin: 1%;}
-
 body {
   width: 90%;
   margin: 5%;
-  background-image: url("https://www.vecteezy.com/vector-art/7718309-minimalist-dark-gradient-wave-background-simple-design-for-your-website");}
+  background-image: url("https://www.bing.com/ck/a?!&&p=78fb81f484a17ca50aebf89be46230a246ec94a5724aaee70dec8aabf9554696JmltdHM9MTczOTQwNDgwMA&ptn=3&ver=2&hsh=4&fclid=3f4fd36d-d679-6cc7-18d5-c0d1d7546dc8&u=a1L2ltYWdlcy9zZWFyY2g_cT1iYWNrJTIwZ291bmQlMjBmb3IlMjB3ZWJzaXRlJkZPUk09SVFGUkJBJmlkPTdENEI5RTQ3MTZEREZDOTU4OTBERTFGQkMwQTZBNTc4RTQ5MUUwQTM&ntb=1");}
 
 #nav {
   margin: 1%;
