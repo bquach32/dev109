@@ -19,6 +19,20 @@ height: 10em;
 margin-bottom: 1em;
 margin: 1%;}
 
+.html {
+  float: left;
+  background-color: #BD9485;
+  margin: 1%;
+  height: 1500px;
+  width: 50%;}
+
+.css {
+  float: left;
+  background-color: #BD9485;
+  margin: 1%;
+  height: 1500px;
+  width: 50%;}
+
 #nav {
   margin: 1%;
   height: 4em;
