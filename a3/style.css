@@ -1,7 +1,13 @@
-.container {
+ .container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             flex-direction: column;
+        }
+.rhombus {
+            font-family: monospace;
+            line-height: 1;
+            display: inline-block;
+            text-align: left;
         }
