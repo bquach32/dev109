@@ -5,7 +5,7 @@
             height: 100vh;
             flex-direction: column;
         }
-        .rhombus {
+.rhombus {
             font-family: monospace;
             line-height: 1;
         }
