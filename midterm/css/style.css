@@ -13,6 +13,12 @@ body {
   margin: 5%;
   background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=600");}
 
+.column2 {
+background-color: #0FAA83;
+height: 10em;
+margin-bottom: 1em;
+margin: 1%;}
+
 #nav {
   margin: 1%;
   height: 3em;
@@ -31,7 +37,7 @@ body {
   
 #footer {
   background-color: #d3d3d3;
-  padding: 0;
+  padding: 0,5px;
   margin: 1%;}
 
 #content {
