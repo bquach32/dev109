@@ -21,17 +21,17 @@ margin: 1%;}
 
 .html {
   float: left;
-  background-color: #BD9485;
+  background-color: #E2CDAB;
   margin: 1%;
-  height: 1500px;
-  width: 50%;}
+  height: 1700px;
+  width: 45%;}
 
 .css {
-  float: left;
-  background-color: #BD9485;
+  float: right;
+  background-color: #E2CDAB;
   margin: 1%;
-  height: 1500px;
-  width: 50%;}
+  height: 1700px;
+  width: 45%;}
 
 #nav {
   margin: 1%;
