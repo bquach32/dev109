@@ -31,7 +31,9 @@ option {
   font-size: 20px;
 }
 
-#errorMessages{
+#passwordError, #usernameError, #firstnameError, #lastnameError, 
+#emailError, #phonenumberError, #addressError, #cityError, #stateError,
+#countryError, #zipcodeError {
   color: red;
   font-weight: bold;
   font-size: 1em;
@@ -61,14 +63,4 @@ button {
 .button: hover {
   background-color: #04AA6D;
   color: white;
-}
-
-#passwordError, #usernameError, #firstnameError, #lastnameError, 
-#emailError, #phoneError, #addressError, #cityError, #stateError,
-#countryError, #zipcodeError {
-  color: red;
-  font-weight: bold;
-  font-size: 1em;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
