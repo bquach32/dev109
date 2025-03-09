@@ -2,7 +2,6 @@
 var dotColor = "#0000ff";
 var mybutton = document.querySelector("button");
 var dotSize = 8;
-var clearScreen = false;
 
 // Handle color input change
 document.getElementById("color").addEventListener("input", function(event) {
@@ -16,23 +15,19 @@ document.getElementById("size").addEventListener("input", function(event) {
 
 // Handle the Clear Screen button click event
 mybutton.addEventListener("click", function(event) {
-  var element = document.getElementsByClassName("dot");
-  for (var index = element.length - 1; index >= 0; index--) {
-    element[index].parentNode.removeChild(element[index]);
+  var elements = document.getElementsByClassName("dot");
+  while (elements.length > 0) {
+    elements[0].parentNode.removeChild(elements[0]);
   }
-  clearScreen = true; 
 });
 
+// Handle the mouse click event to create dots
 addEventListener("click", function(event) {
-  if (clearScreen) {
-    clearScreen = false;  
-    return; 
+  // Do not draw dots after clearing the screen
+  if (event.target.closest('.clicks') || event.target === mybutton) {
+    return;
   }
-  
-  if (event.target.closest('.clicks')) {
-      return;
-  }
-  
+
   // Create the dot element
   var dot = document.createElement("div");
   dot.className = "dot";
