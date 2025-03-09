@@ -29,7 +29,7 @@ addEventListener("click", function(event) {
     return; 
   }
   
-  if (event.target.closest('.controls')) {
+  if (event.target.closest('.clicks')) {
       return;
   }
   
