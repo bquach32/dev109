@@ -1,31 +1,49 @@
 body {
     text-align: center;
     background-color: #6679F6;
-  font-size: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+
 
 h1 {
    font-family: 'SomeTimeLaterRegular';
    font-weight: normal;
    font-style: normal;
-  font-size: 70px;
-  text-align: center;
+   font-size: 70px;
+   text-align: center;
+   margin-bottom: 20px;
 }
 
+/* Game container styling */
 .game-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 20px 0;
+    flex-direction: column; 
 }
+
 
 img {
     width: 80%;
     max-width: 600px;
+    border: 2px solid #333;
+    display: block;
+    margin: 0 auto;
 }
+
 
 ul {
     list-style: none;
     padding: 0;
+    margin-top: 20px;
+    text-align: left; 
 }
 
 li {
@@ -39,17 +57,17 @@ li {
     color: red;
 }
 
+
 button {
-  font-size: 1.2em;
-  background-color: #44E36C;
-  color: white;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  display: block;
-  margin: 20px auto;
+    font-size: 1.2em;
+    background-color: #44E36C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
 }
 
 button:hover {
