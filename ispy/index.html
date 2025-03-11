@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Spy Game</title>
+    <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/Some-Time-Later" type="text/css">
+</head>
+<body>
+  <h1>I Spy Game</h1>
+  <p>Find and click the objects listed below in the image.</p>
+
+  <div class="game-container">
+    <img id="gameImage" src="https://wl-brightside.cf.tsp.li/resize/728x/webp/6fc/800/f673ef5a92b11eeda0817bd242.jpg.webp" usemap="#image-map">
+    <map id="image-map" name="image-map"></map>
+  </div>
+
+  <div class="game-container">
+    <ul id="object-list">
+      <!-- Object list will be dynamically updated -->
+    </ul>
+  </div>
+
+  <button id="replay" onclick="replayGame()">Play Again</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
