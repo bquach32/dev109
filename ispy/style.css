@@ -1,23 +1,26 @@
 body {
     text-align: center;
     background-color: #6679F6;
-    font-size: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+p {
+   font-family: 'dpuntillasALaceRegular';
+   font-weight: normal;
+   font-style: normal;
+  font-size: 40px;
+}
 
 h1 {
    font-family: 'SomeTimeLaterRegular';
    font-weight: normal;
    font-style: normal;
-   font-size: 50px;
-   text-align: center;
+   font-size: 60px;
 }
 
-/* Game container styling */
 .game-container {
     display: flex;
     justify-content: center;
@@ -26,13 +29,6 @@ h1 {
     flex-direction: column;
     width: 700px;
 }
-
-
-img {
-    width: 80%;
-    display: block;
-}
-
 
 ul {
     list-style: none;
@@ -44,7 +40,7 @@ ul {
 }
 
 li {
-    font-size: 25px;
+    font-size: 30px;
     margin: 10px;
     cursor: pointer;
 }
