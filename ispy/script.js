@@ -24,7 +24,7 @@ const items = {
     { id: "knife", name: "Knife", coords: "112,262,35" },
     { id: "lamp", name: "Lamp", coords: "589,285,56" }
   ],
-  "map4": [
+    "map4": [
     { id: "donut", name: "donut", coords: "161,424,26" },
     { id: "books", name: "orange books", coords: "318,234,35" },
     { id: "water", name: "water", coords: "26,271,186,308" }
@@ -36,6 +36,7 @@ const items = {
     { id: "crab", name: "crab", coords: "158,390,28" }
   ]
 };
+
 let currentItems = [];
 
 // Function to load a random image
