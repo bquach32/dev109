@@ -3,7 +3,8 @@ const images = [
   { src: "https://wl-brightside.cf.tsp.li/resize/728x/webp/6fc/800/f673ef5a92b11eeda0817bd242.jpg.webp", mapName: "map1" },
   { src: "https://wl-brightside.cf.tsp.li/resize/728x/webp/f90/575/7956385482be07b8b79cd86625.jpg.webp", mapName: "map2" },
   { src: "https://wl-brightside.cf.tsp.li/resize/728x/webp/543/30a/f1b42b5926b7f5e19395b16d1c.jpg.webp", mapName: "map3" },
-  { src: "https://wl-brightside.cf.tsp.li/resize/728x/webp/3e9/b61/1441fe5a50845f4bf54ac482c1.jpg.webp", mapName: "map4"}
+  { src: "https://wl-brightside.cf.tsp.li/resize/728x/webp/3e9/b61/1441fe5a50845f4bf54ac482c1.jpg.webp", mapName: "map4"},
+  { src: "https://i.pinimg.com/736x/d9/7f/20/d97f2052c365c837cd47b82b4b1ee4cd.jpg", mapName: "map5"}
 ];
 
 // Object mapping images to their items
@@ -23,13 +24,18 @@ const items = {
     { id: "knife", name: "Knife", coords: "112,262,35" },
     { id: "lamp", name: "Lamp", coords: "589,285,56" }
   ],
-    "map4": [
+  "map4": [
     { id: "donut", name: "donut", coords: "161,424,26" },
     { id: "books", name: "orange books", coords: "318,234,35" },
     { id: "water", name: "water", coords: "26,271,186,308" }
+  ],
+  "map5": [
+    { id: "cup", name: "winner cup", coords: "459,401,24" },
+    { id: "bone", name: "fish bone", coords: "577,21,30" },
+    { id: "wolf", name: "wolf", coords: "280,52,34" },
+    { id: "crab", name: "crab", coords: "158,390,28" }
   ]
 };
-
 let currentItems = [];
 
 // Function to load a random image
