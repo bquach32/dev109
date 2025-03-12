@@ -15,8 +15,8 @@ const items = {
     { id: "pear", name: "Pear", coords: "206,330,32" }
   ],
   "map2": [
-    { id: "crown", name: "Crown", coords: "622,192,39" },
-    { id: "clock", name: "Clock", coords: "629,202,46" },
+    { id: "crown", name: "Crown", coords: "618,196,35" },
+    { id: "clock", name: "Clock", coords: "510,206,28" },
     { id: "hat", name: "Green hat", coords: "437,115,64" }
   ],
   "map3": [
