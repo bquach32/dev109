@@ -11,7 +11,7 @@ p {
    font-family: 'dpuntillasALaceRegular';
    font-weight: normal;
    font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 h1 {
@@ -19,6 +19,10 @@ h1 {
    font-weight: normal;
    font-style: normal;
    font-size: 60px;
+}
+
+img{
+  width: 60%;
 }
 
 .game-container {
