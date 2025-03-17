@@ -69,3 +69,11 @@ margin: 1%;}
 li {
   display: inline;
   padding: 0.5em;}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-size: 1em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
