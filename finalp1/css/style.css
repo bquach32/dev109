@@ -1,1 +1,71 @@
+* {
+  font-family:'ArcoPerpetuoRegular';
+  color: #032016;
+  text-align: center;}
 
+#nav, #footer{  
+  background-size: contain;
+  background-position: center;
+  background-repeat:no-repeat;}
+
+body {
+  width: 90%;
+  margin: 5%;
+  background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=600");}
+
+.column2 {
+background-color: #0FAA83;
+height: 10em;
+margin-bottom: 1em;
+margin: 1%;}
+
+.html {
+  float: left;
+  background-color: #E2CDAB;
+  margin: 1%;
+  height: 1700px;
+  width: 45%;}
+
+.css {
+  float: right;
+  background-color: #E2CDAB;
+  margin: 1%;
+  height: 1700px;
+  width: 45%;}
+
+.course {
+  background-color: #C6E9B5;
+  margin: 1%;
+  height: 130px;
+  width: 100%;
+  text-align: center;
+  padding: 1 px;
+}
+
+#nav {
+  margin: 1%;
+  height: 4em;
+  margin-bottom: 1em;
+  padding: 0.5em 0;
+  background-color: #d2b4de;}
+  
+#feature {
+  background-color: #5dade2;
+  background-position: center;
+  background-repeat:no-repeat;
+  height: 15em;
+  margin-bottom: 1em;
+  margin: 1%;
+  font-size: 18px;}
+  
+#footer {
+  background-color: #d3d3d3;
+  padding: 0.5px;
+  margin: 1%;}
+
+#content {
+  overflow: auto;}
+  
+li {
+  display: inline;
+  padding: 0.5em;}
