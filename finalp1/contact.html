@@ -27,12 +27,14 @@
 <div id="About">
 <h2>Have a question?</h2>
 <form action="https://bquach32.github.io/dev109/finalp1/thankyou.html" method="get" name="myContact">
-	<label for="name">Your Name:</label>
+		<label for="name">Your Name:</label>
 		<input type="text" id="name" name="name" required>
-		
+		<span id="nameError" class="error"></span>
+	
 		<label for="email">Your Email:</label>
 		<input type="email" id="email" name="email" required>
-		
+		<span id="emailError" class="error"></span>
+	
 		<label for="comment">Your Comment:</label>
 		<textarea id="comment" name="comment" rows="4" required></textarea>
 		
