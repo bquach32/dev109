@@ -13,25 +13,73 @@ body {
   margin: 5%;
   background-image: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg?auto=compress&cs=tinysrgb&w=600");}
 
-.column2 {
-background-color: #0FAA83;
-height: 10em;
-margin-bottom: 1em;
-margin: 1%;}
+.full-width {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
 
-.html {
-  float: left;
+.welcome-container {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+}
+
+.welcome-text {
+    flex: 1;
+}
+
+.welcome-image {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.welcome-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.two-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.left {
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  width: 50%;
+}
+
+.right {
+  width: 50%;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column; 
+    }
+}
+
+.find-here-list li {
+  display: list-item; 
+  text-align: left;
+}
+
+.html, .css {
   background-color: #E2CDAB;
   margin: 1%;
   height: 1700px;
-  width: 45%;}
-
-.css {
-  float: right;
-  background-color: #E2CDAB;
-  margin: 1%;
-  height: 1700px;
-  width: 45%;}
+  width: 45%;
+}
 
 .course {
   background-color: #C6E9B5;
@@ -69,20 +117,30 @@ margin: 1%;}
 li {
   display: inline;
   padding: 0.5em;
-  font-size: 20px}
+  font-size: 20px;
+}
 
 .error {
   color: red;
   font-weight: bold;
   font-size: 1em;
   margin-top: 20px;
-  margin-bottom: 10px;}
+  margin-bottom: 10px;
+}
 
 p {
-  font-size: 20px;}
+  font-size: 20px;
+  padding: 10px;
+}
 
 a {
-  font-weight: bold;}
+  font-weight: bold;
+}
 
 h1 {
-  font-size: 40px;}
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
