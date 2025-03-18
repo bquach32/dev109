@@ -68,20 +68,21 @@ margin: 1%;}
   
 li {
   display: inline;
-  padding: 0.5em;}
+  padding: 0.5em;
+  font-size: 20px}
 
 .error {
   color: red;
   font-weight: bold;
   font-size: 1em;
   margin-top: 20px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px;}
 
 p {
-  font-size: 20px;
-}
+  font-size: 20px;}
 
 a {
-  font-weight: bold;
-}
+  font-weight: bold;}
+
+h1 {
+  font-size: 40px;}
