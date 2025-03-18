@@ -88,15 +88,6 @@ body {
     flex: 1;
 }
 
-.course {
-  background-color: #C6E9B5;
-  margin: 1%;
-  height: 130px;
-  width: 100%;
-  text-align: center;
-  padding: 1 px;
-}
-
 #nav {
   margin: 1%;
   height: 4em;
@@ -188,4 +179,28 @@ h2 {
 
 .about a:hover {
     text-decoration: underline;
+}
+
+.course {
+  background-color: #C6E9B5;
+  margin: 20px 0;  
+  padding: 5px;  
+  border-radius: 8px;  
+  text-align: left; 
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course p {
+  font-size: 18px;
+  margin-bottom: 10px; 
+}
+
+.course a {
+  color: #007bff;
+  font-weight: bold;
+  text-decoration: none;  
+}
+
+.course a:hover {
+  text-decoration: underline;
 }
