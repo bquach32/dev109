@@ -16,14 +16,16 @@ body {
 .full-width {
     width: 100%;
     background-color: #ffffff;
-    border-radius: 8px;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .welcome-container {
     display: flex;
     align-items: center; 
     gap: 20px; 
+    border-radius: 8px;
+    border: 2px solid #ddd;
 }
 
 .welcome-text {
@@ -87,7 +89,7 @@ body {
   height: 130px;
   width: 100%;
   text-align: center;
-  padding: 1px;
+  padding: 1 px;
 }
 
 #nav {
