@@ -76,11 +76,16 @@ body {
   text-align: left;
 }
 
+.twocolumns {
+    display: flex;
+    gap: 20px;
+}
+
 .html, .css {
-  background-color: #E2CDAB;
-  margin: 1%;
-  height: 1700px;
-  width: 45%;
+    border-radius: 8px;
+    background-color: #eeeff0;
+    border: 2px solid #ddd;
+    flex: 1;
 }
 
 .course {
