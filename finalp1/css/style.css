@@ -231,3 +231,14 @@ iframe {
     border: 2px solid #ddd; 
     border-radius: 8px;
 }
+
+.creative-container a {
+  text-decoration: none; 
+  color: #3498db; 
+  font-weight: bold; 
+  font-size: 1.1em; 
+}
+
+.creative-container a:hover {
+  color: #e74c3c; 
+}
