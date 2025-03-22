@@ -27,13 +27,13 @@ function showSlide(n) {
 // Function for Next button
 function nextSlide() {
   showSlide(slideIndex + 1);
-  disableAutoAdvance(); // Disable auto-slide on manual interaction
+  disableAutoAdvance(); 
 }
 
 // Function for Previous button
 function prevSlide() {
   showSlide(slideIndex - 1);
-  disableAutoAdvance(); // Disable auto-slide on manual interaction
+  disableAutoAdvance(); 
 }
 
 // Function to reset the timer
@@ -57,9 +57,9 @@ function countdown() {
 // Function to disable auto-advance when manually clicking
 function disableAutoAdvance() {
   isAutoAdvancing = false;
-  autoSlideCheckbox.checked = false; // Uncheck the auto-slide checkbox
+  autoSlideCheckbox.checked = false; 
   clearInterval(interval);
-  timerElement.style.display = "none"; // Hide timer
+  timerElement.style.display = "none";
 }
 
 // Function to toggle auto-advance based on checkbox
