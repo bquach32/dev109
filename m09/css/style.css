@@ -1,1 +1,46 @@
+body {
+    height: 200px;
+    background: #d3d3d3;
+  }
+  .dot {
+    height: 8px; 
+    width: 8px;
+    border-radius: 50%; 
+    background: blue;
+    position: absolute;
+  }
 
+p {
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  background-color: #2ecc71;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #71d1ce;
+}
+
+.clicks {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+input {
+  margin: 5px;
+  font-size: 15px;
+}
