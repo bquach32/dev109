@@ -1,74 +1,78 @@
 <!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>A5 - Carousel</title>
-     <link rel="stylesheet" href="https://bquach32.github.io/dev109/a5/style.css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A5 - Carousel</title>
+  <link rel="stylesheet" href="https://bquach32.github.io/dev109/a5/style.css">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/vremena" type="text/css">
- </head>
- <body>
-      <h1>Carousel</h1> 
-     <div id="slideshow-container">
-         <p id="timer">4s</p> <!-- Timer Display -->
- 
- <div class="mySlides fade">
-   <div class="numbertext">1 / 5</div>
-   <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15b1636aac03.07706452.jpeg" width="600" height="400" alt="Japan">
-   <div class="text">JAPAN</div>
- </div>
- 
- <div class="mySlides fade">
-   <div class="numbertext">2 / 5</div>
-   <img src="https://imvoyager.com/wp-content/uploads/2017/10/Vietnam-Insider-Travel-Tips.jpg" width="600" height="400" alt="Vietnam">
-   <div class="text">VIETNAM</div>
- </div>
- 
- <div class="mySlides fade">
-   <div class="numbertext">3 / 5</div>
-   <img src="https://th.bing.com/th/id/R.2790c874726de3c6446efe5a72fe1cdd?rik=FmxynChbkFvf0A&pid=ImgRaw&r=0" width="600" height="400" alt="Korea">
-   <div class="text">KOREA</div>
- </div>
-       
-  <div class="mySlides fade">
-   <div class="numbertext">4 / 5</div>
-   <img src="https://www.suvarnaarora.com/wp-content/uploads/2019/09/Chiang-mai-featured.jpg" width="600" height="400" alt="Korea">
-   <div class="text">THAILAND</div>
- </div>
-       
-  <div class="mySlides fade">
-   <div class="numbertext">5 / 5</div>
-   <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2016/05/visit-london-london-eye.jpg" width="600" height="400" alt="Korea">
-   <div class="text">LONDON</div>
- </div>
-       
-       </div>
- <br>
- 
- <div style="text-align:center">
-   <span class="dot"></span> 
-   <span class="dot"></span> 
-   <span class="dot"></span>
-   <span class="dot"></span> 
-   <span class="dot"></span> 
- </div>
-   
-   
-         <div class="buttons">
-             <button id="prev">Previous</button>
-             <button id="next">Next</button>
-         </div>
-   
-   <div>
-       <p>
-         <a href="http://validator.w3.org/check?uri=referer" target="_blank">
-           <img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0" height="31" width="88">
-         </a>
-         <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
-           <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
-         </a>
-       </p>
-     </div>
-     <script src="https://bquach32.github.io/dev109/a5/script.js"></script>
- </body>
+</head>
+<body>
+  <h1>Carousel</h1>
+  <div id="slideshow-container">
+    <p id="timer">4s</p> <!-- Timer Display -->
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="https://jw-webmagazine.com/wp-content/uploads/2019/06/jw-5d15b1636aac03.07706452.jpeg" width="600" height="400" alt="Japan">
+      <div class="text">JAPAN</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="https://imvoyager.com/wp-content/uploads/2017/10/Vietnam-Insider-Travel-Tips.jpg" width="600" height="400" alt="Vietnam">
+      <div class="text">VIETNAM</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="https://th.bing.com/th/id/R.2790c874726de3c6446efe5a72fe1cdd?rik=FmxynChbkFvf0A&pid=ImgRaw&r=0" width="600" height="400" alt="Korea">
+      <div class="text">KOREA</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="https://www.suvarnaarora.com/wp-content/uploads/2019/09/Chiang-mai-featured.jpg" width="600" height="400" alt="Thailand">
+      <div class="text">THAILAND</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="https://www.readersdigest.ca/wp-content/uploads/sites/14/2016/05/visit-london-london-eye.jpg" width="600" height="400" alt="London">
+      <div class="text">LONDON</div>
+    </div>
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <div class="buttons">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+
+  <div class="auto-slide-control">
+    <input type="checkbox" id="autoSlideCheckbox" checked>
+    <label for="autoSlideCheckbox">Enable Auto-Slide</label>
+  </div>
+
+  <div>
+    <p>
+      <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img style="border:0;width:88px;height:31px" src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0" height="31" width="88">
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+        <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+      </a>
+    </p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
 </html>
