@@ -15,17 +15,17 @@ function validateForm() {
   var passwordRequirments = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).{1,7}$/;
 
   // 2) Get the values from the form
-  var firstname = document.getElementById("firstname").value;
-  var lastname = document.getElementById("lastname").value;
-  var email = document.getElementById("email").value;
-  var phone = document.getElementById("phonenumber").value;
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-  var address = document.getElementById("address").value;
-  var city = document.getElementById("city").value;
-  var state = document.getElementById("state").value;
-  var country = document.getElementById("country").value;
-  var zipcode = document.getElementById("zipcode").value;
+  var firstname = document.getElementById("firstname").value.trim();
+  var lastname = document.getElementById("lastname").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var phone = document.getElementById("phonenumber").value.trim();
+  var username = document.getElementById("username").value.trim();
+  var password = document.getElementById("password").value.trim();
+  var address = document.getElementById("address").value.trim();
+  var city = document.getElementById("city").value.trim();
+  var state = document.getElementById("state").value.trim();
+  var country = document.getElementById("country").value.trim();
+  var zipcode = document.getElementById("zipcode").value.trim();
 
   // 3) Validation
 
@@ -127,7 +127,7 @@ function validateForm() {
   // 4) If there's an error, focus the first invalid field
   if (firstErrorField) {
     firstErrorField.focus();
-    return false; // Don't submit the form if there's an error
+    return false; 
   }
 
   // Clear any error messages before submitting
@@ -147,4 +147,19 @@ function validateForm() {
   return validFirstname && validLastname && validEmail && validPhone && 
     validUsername && validPassword && validAddress && validCity && 
     validState && validCountry && validZipcode;
+}
+
+function formatPhoneNumber() {
+  var phone = document.getElementById("phonenumber").value;
+  var cleanPhone = phone.replace(/\D/g, ""); // Remove non-numeric characters
+
+  if (cleanPhone.length <= 3) {
+    phone = cleanPhone;
+  } else if (cleanPhone.length <= 6) {
+    phone = cleanPhone.slice(0, 3) + "-" + cleanPhone.slice(3);
+  } else {
+    phone = cleanPhone.slice(0, 3) + "-" + cleanPhone.slice(3, 6) + "-" + cleanPhone.slice(6, 15);
+  }
+
+  document.getElementById("phonenumber").value = phone;
 }
