@@ -126,8 +126,16 @@
      <label for="comment">Comment:</label>
 		<input type="text" id="comment" name="comment">
      
-     <button type="submit">Submit</button>
-      </form>
+<form onsubmit="return validateForm()">
+  <!-- Form Fields here -->
+  <input type="text" id="firstname" name="firstname">
+  <div id="firstnameError"></div>
+  
+  <!-- Repeat for other fields... -->
+  
+  <button type="submit">Submit</button>
+</form>
+     
  <p>
   <a href="https://jigsaw.w3.org/css-validator/" target="_blank"><img style="width:350px;height:150px" 
         src="https://bquach32.github.io/dev109/a4/images/a4css.png" alt="Valid css">
