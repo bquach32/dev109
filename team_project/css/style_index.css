@@ -1,0 +1,125 @@
+/*(Duy)*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #007bff; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out; 
+}
+
+a:hover {
+  color: #ff6600; 
+}
+
+a:active {
+  color: #35cad1; 
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+a:hover {
+  animation: none; /* Default: no animation */
+}
+
+a:hover.delay-blink {
+  animation: blink 1s infinite; /* Apply blinking animation */
+}
+
+h1 {
+  font-family: 'MinecraftiaRegular';
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.phrase {
+  font-size: 25px;
+  margin-top: 50px;
+}
+
+textarea {
+  margin: 25px;
+  height: auto;
+  width: 975px;
+}
+
+.bottom {
+  margin-top: auto;
+  text-align: center;
+  height: 25%;
+  width: 100%;
+  background-color: #e4e5f3; 
+  border: 3pt solid black;
+  padding: 10px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+/* Buu */
+h1 {
+  font-size: 50px;
+}
+
+.margin {
+  margin-bottom: -15px;
+  text-align: center;
+  font-size: 30px;
+  padding: 15px;
+}
+
+h6 {
+  font-size: 22px;
+}
+
+.score {
+  margin-bottom: -15px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+}
+
+body {
+  background-image: url("https://antonidimes.github.io/grp109/team_project/image/Pixelbackground.png");
+}
+
+.right {
+  width: 30%;
+  background-color: #7AD7FB;
+  border:1px solid #8D8D8D;
+}
+/* Buu */
+  
+.left, .right {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;
+  width: 70%;
+}
+/*(Duy)*/
