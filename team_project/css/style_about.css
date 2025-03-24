@@ -1,0 +1,132 @@
+/*(Duy)*/
+.container {
+  background-color: #7AD7FB;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border: 1px solid #8D8D8D;
+  padding: 20px;
+}
+
+.timer {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+
+a {
+  color: #007bff; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out; 
+}
+
+a:hover {
+  color: #ff6600; 
+}
+
+a:active {
+  color: #35cad1; 
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+a:hover {
+  animation: none; /* Default: no animation */
+}
+
+a:hover.delay-blink {
+  animation: blink 1s infinite; /* Apply blinking animation */
+}
+
+body {
+  background-image: url("https://antonidimes.github.io/grp109/team_project/image/Pixelbackground.png");
+}
+
+h3, p {
+  text-align: left;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'MinecraftiaRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+/*(Duy)*/
+
+/*(Buu)*/
+h2{
+  text-align: center;
+  font-size: 30px;
+}
+/*(Buu)*/
+
+
+/*(Gurkirat)*/
+.carousel {
+  position: relative;
+  width: 1045px; 
+  margin: auto;
+  overflow: hidden; 
+  border-radius: 8px; 
+}
+
+.carousel-images {
+  display: flex;
+}
+
+.carousel-images img {
+  max-height: 300px; 
+  object-fit: cover; 
+  flex-shrink: 0;
+}
+/*(Gurkirat)*/
+
+/*(Buu)*/
+.carousel {
+  margin-bottom: 20px; 
+}
+
+.carousel-images {
+  transition: transform 0.5s ease-in-out;
+  width: 600%;
+}
+
+.carousel-images img {
+ width: calc(100% / 6);
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white; 
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 75%;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+/*(Buu)*/
