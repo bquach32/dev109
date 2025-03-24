@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M07 - JustType</title>
+    <link rel="stylesheet" href="css/style_index.css" type="text/css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/asd" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <!--Title -->
+        <h1>JustType</h1>
+        
+        <!--Sentence -->
+        <p class="phrase" id="sentence"></p>
+        
+        <!-- Typing area -->
+        <textarea id="input" placeholder="Type the above sentence here..." autofocus></textarea> <!--inside the input area-->
+        
+        <!-- Result -->
+        <div id="result"></div>
+        
+        <!-- All the person who actively contribute in this website -->
+        <div class="bottom">
+          <h3 class="margin">Website Completed: March 24,2025</h3>
+          <h6>Developers:</h6>
+          <p id="developer-name">Duy Anh Nguyen</p>
+        </div>
+      </div>
+      <div class="right">
+        <!-- Instruction -->
+        <h3 class="margin">Instructions:</h3>
+        <p>The system presents you with a sentence to type. We will track your time and count your mistakes. You have 30 seconds to type as 
+          many sentences as possible. To advance to the next round, you must type each sentence correctly. Aim for accuracy and speed—try to 
+          get the highest score! TRY TO GET THE HIGHEST SCORE!!!<!--instructions--></p>
+        <br>
+        
+        <!-- Scores -->
+        <h3 class="margin">Score:</h3>
+        <p>Time Remaining: <span id="time">0</span> seconds</p>
+        <p>Mistakes: <span id="mistakes">0</span></p>
+        <p>Typed Correct Characters: <span id="typedCorrect">0</span></p>
+        <br>
+        
+        <!-- Link to chnage.html -->
+        <h3 class="margin">Link:</h3> <!--link to changes page-->
+        <p><a href="https://antonidimes.github.io/grp109/team_project/about.html">Click here</a> to see hows and whys we create this website.</p>
+      </div>
+    </div>
+    <!-- Main JavaScript file -->
+    <script src="js/randomize_and_count.js"></script>
+    <!-- JavaScript file for the blinker function -->
+    <script src="js/blinker.js"></script>
+  </body>
+</html>
