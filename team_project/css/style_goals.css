@@ -1,0 +1,72 @@
+/*(Duy)*/
+.container {
+  background-color: #7AD7FB;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  border: 1px solid #8D8D8D;
+  padding: 20px;
+}
+
+.titles {
+  margin-bottom: 30px;
+}
+
+.answer {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out; 
+}
+
+a:hover {
+  color: #ff6600; 
+}
+
+a:active {
+  color: #35cad1; 
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+a:hover {
+  animation: none; /* Default: no animation */
+}
+
+a:hover.delay-blink {
+  animation: blink 1s infinite; /* Apply blinking animation */
+}
+
+body {
+  background-image: url("https://antonidimes.github.io/grp109/team_project/image/Pixelbackground.png");
+}
+
+h3, p {
+  text-align: left;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'MinecraftiaRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+}
+/*(Duy)*/
+
+/*(Buu)*/
+h2{
+  text-align: center;
+  font-size: 30px;
+}
