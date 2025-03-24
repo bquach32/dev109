@@ -32,7 +32,7 @@ option {
 }
 
 #passwordError, #usernameError, #firstnameError, #lastnameError, 
-#emailError, #phonenumberError, #addressError, #cityError, #stateError,
+#emailError, #phoneError, #addressError, #cityError, #stateError,
 #countryError, #zipcodeError {
   color: red;
   font-weight: bold;
