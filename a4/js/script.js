@@ -1,63 +1,64 @@
 function validateForm() {
-  //1) Create a variable to control status of each field. Assume that they are not valid
+  // 1) Create a variable to control status of each field. Assume that they are not valid
   var validFirstname = false;
   var validLastname = false;
   var validEmail = false;
   var validPhone = false;
   var validUsername = false;
-  var firstErrorField = null; // Focus textbox
   var validPassword = false;
-  var passwordRequirments = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).{1,7}$/;
   var validAddress = false;
   var validCity = false;
   var validState = false;
   var validCountry = false;
   var validZipcode = false;
+  var firstErrorField = null;
+  var passwordRequirments = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>]).{1,7}$/;
 
- //2) Create variables to read the values from html text inputs
-  var firstname = document.getElementById("firstname").value.trim();
-  var lastname = document.getElementById("lastname").value.trim();
-  var email = document.getElementById("email").value.trim();
-  var phone = document.getElementById("phonenumber").value.trim();
-  var username = document.getElementById("username").value.trim();
-  var password = document.getElementById("password").value.trim();
-  var address = document.getElementById("address").value.trim();
-  var city = document.getElementById("city").value.trim();
-  var state = document.getElementById("state").value.trim();
-  var country = document.getElementById("country").value.trim();
-  var zipcode = document.getElementById("zipcode").value.trim();
+  // 2) Get the values from the form
+  var firstname = document.getElementById("firstname").value;
+  var lastname = document.getElementById("lastname").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phonenumber").value;
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  var address = document.getElementById("address").value;
+  var city = document.getElementById("city").value;
+  var state = document.getElementById("state").value;
+  var country = document.getElementById("country").value;
+  var zipcode = document.getElementById("zipcode").value;
 
-  resetErrorMessages();
+  // 3) Validation
 
- //3) Do the validation
   // Firstname Validation
-  if (!/^[A-Za-z]+$/.test(firstname) || firstname.length > 20) {
-    showError("firstnameError", "First name must contain only letters and be no more than 20 characters.");
+  if (firstname === "" || firstname.length > 20) {
+    document.getElementById("firstnameError").innerHTML = "The first name is required and cannot be greater than 20 characters.";
     if (!firstErrorField) firstErrorField = document.getElementById("firstname");
   } else {
     validFirstname = true;
   }
 
   // Lastname Validation
-  if (!/^[A-Za-z]+$/.test(lastname) || lastname.length > 20) {
-    showError("lastnameError", "Last name must contain only letters and be no more than 20 characters.");
+  if (lastname === "" || lastname.length > 20) {
+    document.getElementById("lastnameError").innerHTML = "The last name is required and cannot be greater than 20 characters.";
     if (!firstErrorField) firstErrorField = document.getElementById("lastname");
   } else {
     validLastname = true;
   }
 
- // Email Validation
-  if (!isValidEmail(email)) {
-    showError("emailError", "Invalid email address.");
+  // Email Validation
+  var atpos = email.indexOf("@");
+  var dotpos = email.lastIndexOf(".");
+  if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
+    document.getElementById("emailError").innerHTML = "Invalid email address.";
     if (!firstErrorField) firstErrorField = document.getElementById("email");
   } else {
     validEmail = true;
   }
 
   // Phone Validation
-  var cleanPhone = phone.replace(/\D/g, ""); // Remove non-numeric characters
+  var cleanPhone = phone.replace(/\D/g, ""); 
   if (isNaN(cleanPhone) || cleanPhone.length > 15 || cleanPhone === "") {
-    showError("phoneError", "Phone number should contain only numbers with no more than 15 digits.");
+    document.getElementById("phoneError").innerHTML = "Phone number should contain only numbers with no more than 15 digits.";
     if (!firstErrorField) firstErrorField = document.getElementById("phonenumber");
   } else {
     validPhone = true;
@@ -65,7 +66,7 @@ function validateForm() {
 
   // Username Validation
   if (username === "" || username.length > 12) {
-    showError("usernameError", "The username is required and cannot be greater than 12 characters.");
+    document.getElementById("usernameError").innerHTML = "The username is required and cannot be greater than 12 characters.";
     if (!firstErrorField) firstErrorField = document.getElementById("username");
   } else {
     validUsername = true;
@@ -73,64 +74,63 @@ function validateForm() {
 
   // Password Validation
   if (!password.match(passwordRequirments)) {
-    showError("passwordError", "The password must contain 1 upper, 1 lower, 1 number, 1 special character, and be at most 7 characters.");
+    document.getElementById("passwordError").innerHTML = "The password is required and cannot be greater than 7 characters, 1 upper, 1 lower, 1 number, and 1 special character.";
     if (!firstErrorField) firstErrorField = document.getElementById("password");
   } else {
     validPassword = true;
   }
 
-  // Address validation
+  // Address Validation
   if (address === "") {
-    showError("addressError", "The address is required.");
+    document.getElementById("addressError").innerHTML = "The address is required.";
     if (!firstErrorField) firstErrorField = document.getElementById("address");
   } else {
     validAddress = true;
   }
 
-  // City validation
+  // City Validation
   if (city === "") {
-    showError("cityError", "The city is required.");
+    document.getElementById("cityError").innerHTML = "The city is required.";
     if (!firstErrorField) firstErrorField = document.getElementById("city");
   } else {
     validCity = true;
   }
 
-  // State validation
+  // State Validation
   if (state === "") {
-    showError("stateError", "The state is required.");
+    document.getElementById("stateError").innerHTML = "The state is required.";
     if (!firstErrorField) firstErrorField = document.getElementById("state");
   } else {
     validState = true;
   }
 
-  // Country validation
+  // Country Validation
   if (country === "") {
-    showError("countryError", "The country is required.");
+    document.getElementById("countryError").innerHTML = "The country is required.";
     if (!firstErrorField) firstErrorField = document.getElementById("country");
   } else {
     validCountry = true;
   }
 
-  // Zipcode validation (Required only if country is "US")
-  if (country === "US") {
+  // Zipcode Validation
+  if (country === "US") { 
     if (zipcode === "" || zipcode.length !== 5 || isNaN(zipcode)) {
-      showError("zipcodeError", "Zipcode must be 5 digits if you live in the United States.");
+      document.getElementById("zipcodeError").innerHTML = "The zipcode is required (and must be 5 digits) if you live in the United States.";
       if (!firstErrorField) firstErrorField = document.getElementById("zipcode");
     } else {
       validZipcode = true;
     }
   } else {
-    validZipcode = true;
+    validZipcode = true; 
   }
 
+  // 4) If there's an error, focus the first invalid field
   if (firstErrorField) {
     firstErrorField.focus();
-    return false;
+    return false; // Don't submit the form if there's an error
   }
 
- 
- //4) Send error messages 
-function resetErrorMessages() {
+  // Clear any error messages before submitting
   document.getElementById("firstnameError").innerHTML = "";
   document.getElementById("lastnameError").innerHTML = "";
   document.getElementById("emailError").innerHTML = "";
@@ -142,22 +142,9 @@ function resetErrorMessages() {
   document.getElementById("stateError").innerHTML = "";
   document.getElementById("countryError").innerHTML = "";
   document.getElementById("zipcodeError").innerHTML = "";
-}
 
-  
-  //5) return the status of each field
+  // 5) Return true if everything is valid, otherwise return false
   return validFirstname && validLastname && validEmail && validPhone && 
-         validUsername && validPassword && validAddress && validCity && 
-         validState && validCountry && validZipcode;
-}
-
-
-function showError(elementId, message) {
-  document.getElementById(elementId).innerHTML = message;
-}
-
-function isValidEmail(email) {
-  var atpos = email.indexOf("@");
-  var dotpos = email.lastIndexOf(".");
-  return atpos > 1 && dotpos > atpos + 2 && dotpos + 2 < email.length;
+    validUsername && validPassword && validAddress && validCity && 
+    validState && validCountry && validZipcode;
 }
